@@ -1,0 +1,17 @@
+{
+  "name": "final",
+  "description": "",
+  "main": "n",
+  "authors": [
+    "Vita Alpha <alpha-2020@yandex.ru>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/alphavita/final",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
