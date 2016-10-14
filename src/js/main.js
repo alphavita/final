@@ -1,2 +1,1 @@
-//= partials/swiper.min.js
-//= partials/slider.js
+//= partials/ideas.js

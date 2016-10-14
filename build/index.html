@@ -2,10 +2,18 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<title>final</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<!-- <script type="text/javascript" src="js/swiper.js"></script>
-	<script type="text/javascript" src="js/slider.js"></script> -->
+	<!-- <script type="text/javascript" src ="js/jquery-1.11.1.min.js"></script> -->
+
+	<script type="text/javascript" src="js/tmpl.js"></script>
+	<script type="text/javascript" src="js/masonry.pkgd.js"></script>
+	<script type="text/javascript" src ="js/jquery-1.11.1.min.js"></script>
+
+
+	<script type="text/javascript" src="js/main.js"></script>
+
 </head>
 <body>
 <div class="header-wrapper">
@@ -95,8 +103,8 @@
 
         </div>
 
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
     </div>
     <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -124,8 +132,8 @@
         </div>
 
 
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
     </div>
 	</div>
 	<div class="clearfix"></div>
@@ -189,7 +197,29 @@
 		<a href="#">See other partners</a>
 	</div>
 </div>
+<div class="ideas">
 
+
+
+             <h2> Discover holiday activity ideaas</h2>
+                <div class="grid js-masonry" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 300, "gutter": 30 }'>
+                     <div class="grid-item"></div>
+                     <div class="grid-item"></div>
+                     <div class="grid-item"></div>
+                     <div class="grid-item"></div>
+                     <div class="grid-item grid-item--width2"></div>
+                     <div class="grid-item grid-item--width2"></div>
+                     <div class="grid-item"></div>
+                </div>
+
+            <div class="search-form">
+                <h2 class="search-form-heading">Discover holiday activity ideas</h2>
+                <p class="search-form-heading-small">Hi! What are your holiday interests?</p>
+                <input type="text" class = "search-area" placeholder="Enter your interests">
+                <input type="button" class = "search-button" value="Search partners">
+            </div>
+
+        </div>
 <div class="footer-wrapper">
 <footer>
 <div class="footer-nav footer-nav_first">
