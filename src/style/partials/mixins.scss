@@ -6,6 +6,6 @@
     @media (max-width: 939px) and (min-width: 768px) { @content; }
   }
   @if $point == mobile {
-    @media (max-width: 767px)/*,(max-device-width: 767px)*/ { @content; }
+    @media (min-width: 320px) and (max-width: 767px)/*,(max-device-width: 767px)*/ { @content; }
   }
 }
