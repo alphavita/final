@@ -1,0 +1,115 @@
+.footer-wrapper {
+	border-top: 2px solid #ff4e50;
+	 @include breakpoint(tablet){
+      min-width: 768px;
+        width: 100%;
+        margin-bottom: 41px;
+
+
+    }
+}
+footer {
+	width: 940px;
+	margin: 0 auto;
+	margin-top: 40px;
+	@include breakpoint(tablet){
+     margin-left: 40px;
+
+
+    }
+}
+.footer-nav {
+	display: inline-block;
+	vertical-align: top;
+
+	a {
+		text-decoration: none;
+	}
+	h2 {
+		font-family: 'Montserrat-Bold';
+		color:  #ff4e50;
+		font-size: 16px;
+		font-weight: 700;
+		text-align: left;
+	}
+	h3 {
+		font-family: Montserrat-Bold;
+		color: #333333;
+		font-size: 14px;
+		font-weight: 700;
+		text-align: left;
+
+	}
+
+
+	ul {
+		list-style: none;
+		padding: 0;
+		li {
+			font-family: 'Roboto-Light';
+			color: #666666;
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 24px;
+			text-align: left;
+		}
+	}
+
+
+
+}
+.footer-nav_first {
+		width: 240px;
+		@include breakpoint(tablet){
+
+        width: 150px;
+        margin-right: 84px;
+
+
+    }
+
+	}
+.footer-nav_second {
+	width: 160px;
+	@include breakpoint(tablet){
+
+        width: 68px;
+        margin-right: 104px;
+
+
+    }
+}
+.footer-nav_three {
+	width: 300px;
+	@include breakpoint(tablet){
+
+        width: 59px;
+        margin-right: 121px;
+
+
+
+    }
+}
+.footer-nav_four {
+	margin: 0;
+	width: 140px;
+	figure {
+		margin: 0;
+		@include breakpoint(tablet){
+
+        width: 110px;
+
+
+
+
+    }
+	}
+	figcaption {
+		font-family: Montserrat-Bold;
+		color: #cccccc;
+		font-size: 10px;
+		font-weight: 700;
+		text-align: left;
+
+	}
+}

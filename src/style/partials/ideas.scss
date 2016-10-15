@@ -1,0 +1,167 @@
+@import "mixins.scss";
+.ideas {
+
+  width: 980px;
+  margin: 0 auto;
+   @include breakpoint(tablet){
+      min-width: 788px;
+        width: 100%;
+
+
+    }
+ h2 {
+    font-family: Montserrat-Bold;
+    color: #333333;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .grid {
+
+  max-width:980px;
+  margin:0 auto;
+  margin-bottom: 99px;
+  @include breakpoint(tablet){
+      min-width: 788px;
+        width: 100%;
+        padding-left: 10px;
+
+    }
+
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-item {
+  width: 300px;
+      height: 310px;
+     display: inline-block;
+      background: gray;
+      // border: 7px solid #FFF;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      // border: 7px solid #FFF;
+      background-size:cover;
+      @include breakpoint(tablet){
+
+        width: 236px;
+        margin-left: 0;
+        margin-right: 16px;
+
+    }
+
+
+}
+
+// .grid-item:nth-child(3) {
+//      @include breakpoint(tablet){
+
+
+//         margin-right: 0px;
+
+//     }
+// }
+.grid-item--width2 {
+    width: 620px;
+   height:310px;
+   background-size:cover;
+   margin-bottom: 20px;
+    @include breakpoint(tablet){
+
+        width: 486px;
+
+    }
+
+}
+// .grid-item:nth-child(5) {
+//      @include breakpoint(tablet){
+
+
+//         margin-right: 0px;
+
+//     }
+// }
+// .grid-item:last-child {
+//      @include breakpoint(tablet){
+
+
+//         margin-right: 0px;
+
+//     }
+// }
+.image-item {
+       display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Montserrat Bold", sans-serif;
+  font-size: 22px;
+  color: white;
+text-align: center;
+}
+
+}
+.search-form {
+
+   width: 422px;
+    margin: 40px auto 70px;
+    @include breakpoint(tablet){
+
+
+        margin-bottom: 100px;
+
+    }
+
+  .search-form-heading-small{
+   font-family: 'Roboto-Light';
+    color: #333333;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 38px;
+
+
+    }
+
+    .search-area {
+      border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cccccc;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 0px 0px #eeeeee;
+    width: 240px;
+    height: 40px;
+    font-family: 'Roboto-Light';
+    color: #999999;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+    padding: 14px 16px;
+    margin-right: 10px;
+    }
+    .search-button {
+
+    background-color: #ff4e50;
+    width: 160px;
+    height: 40px;
+    border: none;
+    font-family: Montserrat-Bold;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 20px;
+  }
+  }

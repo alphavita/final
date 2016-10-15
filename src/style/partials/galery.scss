@@ -1,0 +1,130 @@
+.galery-wrapper {
+	width: 940px;
+	margin: 0 auto;
+	padding-top: 100px;
+	position: relative;
+        height: 100%;
+         @include breakpoint(tablet){
+
+      	margin-left: 10px;
+      	margin-right: 10px;
+      	min-width: 768px;
+      	width: 100%;
+
+    }
+
+	h2 {
+		font-family: Montserrat-Bold;
+		color: #333333;
+		font-size: 22px;
+		font-weight: 700;
+		text-align: center;
+		margin-bottom: 40px;
+		 @include breakpoint(tablet){
+
+      	margin-bottom: 37px;
+
+
+    }
+	}
+	.swiper-container {
+        width: 300px;
+        height: 450px;
+        float: left;
+        margin-right: 20px;
+         @include breakpoint(tablet){
+
+      	width: 236px;
+      	height: 398px;
+      	position: relative;
+      	.swiper-button-next,
+      	.swiper-button-prev {
+      		position: absolute;
+      		top: 100px;
+      	}
+
+    }
+
+    }
+    .swiper-container:last-child {
+    	margin-right: 0;
+    }
+    .swiper-slide {
+    	position: relative;
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        .step {
+        	position: absolute;
+        	top: 270px;
+        	left:20px;
+        	z-index: 10;
+        	font-family: Montserrat-Regular;
+			color:  #ffffff;
+			font-size: 10px;
+			font-weight: 400;
+			text-align: center;
+			background-color: #ff4e50;
+			width: 70px;
+			padding: 6px 14px;
+			text-transform: uppercase;
+			border-radius: 10px;
+			        }
+			h2 {
+				font-family: Montserrat-Bold;
+				color: #ffffff;
+				font-size: 24px;
+				font-weight: 700;
+				text-align: left;
+				position: absolute;
+				top:310px;
+				left: 20px;
+							}
+			.text {
+				font-family: Roboto-Light;
+				color: #cccccc;
+				font-size: 14px;
+				font-weight: 300;
+				text-align: left;
+				position: absolute;
+				top: 360px;
+				left: 20px;
+				width: 260px;
+				  @include breakpoint(tablet){
+
+      			width: 197px;
+
+
+      	}
+
+							}
+    }
+    .swiper-slide img {
+        width: 300px;
+       -webkit-background-size: cover;
+       background-size: cover;
+       @include breakpoint(tablet){
+
+      	width: 236px;
+      	height: 398px;
+
+      	}
+
+    }
+
+}
