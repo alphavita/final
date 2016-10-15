@@ -1,13 +1,26 @@
+ @import "mixins.scss";
+
 
 
 .header-wrapper {
+	  @include breakpoint(tablet){
+
+        padding-left: 50px;
+        padding-right: 50px;
+
+    }
+
+
 	background: url(../img/promomain.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: top center;
 	height: 700px;
 	header {
-		width: 940px;
-		margin: 0 auto;
+
+
+
+    		margin: 0 auto;
 		padding-top: 30px;
 
 
@@ -42,7 +55,7 @@
 			button {
 				font-family: Montserrat-Bold;
 				color: #ffffff;
-				font-size: 14px;
+				font-size: 13px;
 				font-weight: 700;
 				text-align: center;
 				background-color: #ff4e50;

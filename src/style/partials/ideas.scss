@@ -1,6 +1,14 @@
+@import "mixins.scss";
 .ideas {
+
   width: 980px;
   margin: 0 auto;
+   @include breakpoint(tablet){
+      min-width: 788px;
+        width: 100%;
+
+
+    }
  h2 {
     font-family: Montserrat-Bold;
     color: #333333;
@@ -14,6 +22,13 @@
   max-width:980px;
   margin:0 auto;
   margin-bottom: 99px;
+  @include breakpoint(tablet){
+      min-width: 788px;
+        width: 100%;
+        padding-left: 10px;
+
+    }
+
 }
 
 /* clearfix */
@@ -36,17 +51,53 @@
       margin-left: 20px;
       // border: 7px solid #FFF;
       background-size:cover;
+      @include breakpoint(tablet){
+
+        width: 236px;
+        margin-left: 0;
+        margin-right: 16px;
+
+    }
+
 
 }
 
+// .grid-item:nth-child(3) {
+//      @include breakpoint(tablet){
 
+
+//         margin-right: 0px;
+
+//     }
+// }
 .grid-item--width2 {
     width: 620px;
    height:310px;
    background-size:cover;
    margin-bottom: 20px;
+    @include breakpoint(tablet){
+
+        width: 486px;
+
+    }
 
 }
+// .grid-item:nth-child(5) {
+//      @include breakpoint(tablet){
+
+
+//         margin-right: 0px;
+
+//     }
+// }
+// .grid-item:last-child {
+//      @include breakpoint(tablet){
+
+
+//         margin-right: 0px;
+
+//     }
+// }
 .image-item {
        display: block;
   position: absolute;
@@ -64,6 +115,13 @@ text-align: center;
 
    width: 422px;
     margin: 40px auto 70px;
+    @include breakpoint(tablet){
+
+
+        margin-bottom: 100px;
+
+    }
+
   .search-form-heading-small{
    font-family: 'Roboto-Light';
     color: #333333;
@@ -71,6 +129,7 @@ text-align: center;
     font-weight: 300;
     text-align: center;
     margin-bottom: 38px;
+
 
     }
 
