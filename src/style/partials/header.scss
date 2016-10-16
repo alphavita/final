@@ -75,6 +75,28 @@
 			margin-top: 152px;
 			text-transform: uppercase;
 			margin-bottom: 45px;
+			@include breakpoint(mobile){
+
+
+     			font-family: Montserrat-Bold;
+				color: #ffffff;
+				font-size: 30px;
+				font-weight: 700;
+				text-align: center;
+				transform: scaleX(1.0014);
+				width: 300px;
+				margin-top: 229px;
+				margin-left: auto;
+				margin-right: auto;
+
+
+
+
+
+    }
+
+
+
 					}
 			p {
 				font-family: Roboto-Light;
@@ -83,6 +105,25 @@
 				font-weight: 300;
 				text-align: center;
 				margin-bottom: 40px;
+				@include breakpoint(mobile){
+
+
+     			font-family: Roboto-Light;
+				color: #ffffff;
+				font-size: 18px;
+				font-weight: 300;
+				text-align: center;
+				transform: scaleX(1.0014);
+				width: 217px;
+				margin: 0 auto;
+				margin-bottom: 31px;
+
+
+
+
+
+    }
+
 			}
 			button {
 				font-family: Montserrat-Bold;

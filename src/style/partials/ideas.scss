@@ -9,6 +9,15 @@
 
 
     }
+    @include breakpoint(mobile){
+
+          min-width: 320px  ;
+          width:  100%;
+
+
+
+    }
+
  h2 {
     font-family: Montserrat-Bold;
     color: #333333;
@@ -28,6 +37,16 @@
         padding-left: 10px;
 
     }
+     @include breakpoint(mobile){
+
+          min-width: 340px  ;
+          width:  100%;
+
+
+
+
+    }
+
 
 }
 
@@ -58,6 +77,16 @@
         margin-right: 16px;
 
     }
+    @include breakpoint(mobile){
+
+              width: 300px;
+              height: 121px;
+               margin-bottom: 10px;
+               margin-left: 10px;
+
+
+
+        }
 
 
 }
@@ -80,6 +109,16 @@
         width: 486px;
 
     }
+    @include breakpoint(mobile){
+
+              width: 300px;
+              height: 121px;
+              margin-bottom: 10px;
+
+
+
+        }
+
 
 }
 // .grid-item:nth-child(5) {
@@ -121,6 +160,15 @@ text-align: center;
         margin-bottom: 100px;
 
     }
+     @include breakpoint(mobile){
+
+              width: 320px;
+
+              margin-bottom: 10px;
+
+
+
+        }
 
   .search-form-heading-small{
    font-family: 'Roboto-Light';
@@ -150,6 +198,17 @@ text-align: center;
     text-align: left;
     padding: 14px 16px;
     margin-right: 10px;
+     @include breakpoint(mobile){
+
+              width: 280px;
+              margin: 0 auto;
+              display: block;
+              margin-bottom: 10px;
+
+
+
+
+        }
     }
     .search-button {
 
@@ -163,5 +222,16 @@ text-align: center;
     font-weight: 700;
     text-align: center;
     border-radius: 20px;
+    @include breakpoint(mobile){
+
+              width: 280px;
+              margin: 0 auto;
+              display: block;
+              margin-bottom: 40px;
+
+
+
+
+        }
   }
   }

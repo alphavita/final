@@ -7,6 +7,15 @@
 
 
     }
+    @include breakpoint(mobile){
+
+     			min-width: 320px	;
+     			width:  100%;
+     			margin-bottom: 18px;
+
+
+
+    }
 }
 footer {
 	width: 940px;
@@ -21,9 +30,18 @@ footer {
 .footer-nav {
 	display: inline-block;
 	vertical-align: top;
+	 @include breakpoint(mobile){
+
+     			display: block;
+
+
+
+    }
 
 	a {
 		text-decoration: none;
+
+
 	}
 	h2 {
 		font-family: 'Montserrat-Bold';
@@ -31,6 +49,19 @@ footer {
 		font-size: 16px;
 		font-weight: 700;
 		text-align: left;
+		 @include breakpoint(mobile){
+
+     			text-align: center;
+     		font-weight: 700;
+				text-align: center;
+				text-transform: uppercase;
+				letter-spacing: 1.2px;
+				margin-bottom: 18px;
+
+
+
+
+    }
 	}
 	h3 {
 		font-family: Montserrat-Bold;
@@ -38,6 +69,14 @@ footer {
 		font-size: 14px;
 		font-weight: 700;
 		text-align: left;
+		@include breakpoint(mobile){
+
+     			text-align: center;
+     			width: 320px;
+
+
+
+    }
 
 	}
 
@@ -52,6 +91,13 @@ footer {
 			font-weight: 300;
 			line-height: 24px;
 			text-align: left;
+			@include breakpoint(mobile){
+
+     			display: inline-block;
+     			margin-right: 10px;
+
+
+    }
 		}
 	}
 
@@ -66,7 +112,15 @@ footer {
         margin-right: 84px;
 
 
+
     }
+     @include breakpoint(mobile){
+
+     			width: 320px;
+
+
+    }
+
 
 	}
 .footer-nav_second {
@@ -78,6 +132,14 @@ footer {
 
 
     }
+     @include breakpoint(mobile){
+
+     			text-align: center;
+     			width: 320px;
+
+
+
+    }
 }
 .footer-nav_three {
 	width: 300px;
@@ -85,7 +147,11 @@ footer {
 
         width: 59px;
         margin-right: 121px;
+   }
+   @include breakpoint(mobile){
 
+     		margin-top: 17px;
+     		margin-bottom: 19px;
 
 
     }
@@ -104,12 +170,30 @@ footer {
 
     }
 	}
+	figure {@include breakpoint(mobile){
+
+
+     			min-width: 320px;
+				width: 100%;
+    }
+}
 	figcaption {
 		font-family: Montserrat-Bold;
 		color: #cccccc;
 		font-size: 10px;
 		font-weight: 700;
 		text-align: left;
+		@include breakpoint(mobile){
+
+     			text-transform: uppercase;
+     			text-align: center;
+     			width: 100%;
+     			margin-bottom: 10px;
+
+
+
+
+    }
 
 	}
 }
