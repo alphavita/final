@@ -1,5 +1,15 @@
 @import "mixins.scss";
+.galery {
+   @include breakpoint(mobile){
 
+          min-width: 320px  ;
+          width:  100%;
+
+
+
+
+    }
+}
 .galery-wrapper {
 	width: 940px;
 	margin: 0 auto;
@@ -25,6 +35,7 @@
           margin-left: auto;
           margin-right: auto;
           display: block;
+          padding-top: 38px;
 
 
 
@@ -40,6 +51,13 @@
 		 @include breakpoint(tablet){
 
       	margin-bottom: 37px;
+
+
+    }
+     @include breakpoint(mobile){
+
+          margin-bottom: 16px;
+
 
 
     }
@@ -154,7 +172,11 @@
 			border-radius: 10px;
       @include breakpoint(mobile){
         position: absolute;
-         top: 69px;
+         top: 67px;
+         left:12px;
+         padding-left: 11px;
+         letter-spacing: 2.2px;
+         padding-right: 11px;
 
           }
 			        }
@@ -169,7 +191,9 @@
 				left: 20px;
          @include breakpoint(mobile){
 
-         top: 102px;
+         top: 105px;
+         left: 12px;
+         line-height: 1.2;
 
           }
 							}
@@ -192,6 +216,8 @@
          @include breakpoint(mobile){
 
          top: 174px;
+         left: 11px;
+         line-height: 1.2;
 
           }
 

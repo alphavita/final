@@ -12,6 +12,7 @@
      			min-width: 320px	;
      			width:  100%;
      			margin-bottom: 18px;
+     			border-top: 4px solid #ff4e50;
 
 
 
@@ -23,6 +24,15 @@ footer {
 	margin-top: 40px;
 	@include breakpoint(tablet){
      margin-left: 40px;
+
+
+    }
+     @include breakpoint(mobile){
+
+     		width: 320px	;
+     		margin-top: 18px;
+
+
 
 
     }
@@ -40,6 +50,7 @@ footer {
 
 	a {
 		text-decoration: none;
+		// letter-spacing: 2.0px;
 
 
 	}
@@ -55,8 +66,8 @@ footer {
      		font-weight: 700;
 				text-align: center;
 				text-transform: uppercase;
-				letter-spacing: 1.2px;
-				margin-bottom: 18px;
+				letter-spacing: 1.21px;
+				margin-bottom: 16px;
 
 
 
@@ -94,7 +105,8 @@ footer {
 			@include breakpoint(mobile){
 
      			display: inline-block;
-     			margin-right: 10px;
+     			margin-right: 7px;
+     			// letter-spacing: px;
 
 
     }
@@ -117,6 +129,7 @@ footer {
      @include breakpoint(mobile){
 
      			width: 320px;
+     			letter-spacing: 1.2px;
 
 
     }
@@ -150,8 +163,8 @@ footer {
    }
    @include breakpoint(mobile){
 
-     		margin-top: 17px;
-     		margin-bottom: 19px;
+     		margin-top: 12px;
+     		margin-bottom: 15px;
 
 
     }
@@ -189,6 +202,7 @@ footer {
      			text-align: center;
      			width: 100%;
      			margin-bottom: 10px;
+     			letter-spacing: 1.1px;
 
 
 

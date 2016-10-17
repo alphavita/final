@@ -1,3 +1,14 @@
+.partner {
+	@include breakpoint(mobile){
+
+          min-width: 320px  ;
+          width:  100%;
+
+
+
+
+    }
+}
 .partner-wrapper {
 
 	width: 940px;
@@ -18,9 +29,11 @@
     }
     @include breakpoint(mobile){
 
-     			min-width: 320px	;
-     			width:  100%;
-     			margin-top: 38px;
+
+     			width:  320px;
+     			margin-top: 26px;
+     			line-height: 1.1;
+     			margin-bottom: 40px;
 
 
 
@@ -38,6 +51,7 @@
 
      			padding-left: 28px;
      			padding-right: 28px;
+     			margin-bottom: 17px;
 
 
     }
@@ -63,6 +77,8 @@
 		@include breakpoint(mobile){
 
      			width: 280px;
+     			margin-top: 2px;
+     			letter-spacing: 0.6px;
 
 
     }
@@ -87,7 +103,10 @@
     }
     @include breakpoint(mobile){
 
-     			margin-left: 64px;
+
+     			width: 320px;
+     			margin: 0 auto;
+
 
 
     }
@@ -101,6 +120,13 @@
 		figure {
 			position: relative;
 			margin-bottom: 36px;
+			 @include breakpoint(mobile){
+
+					margin-bottom: 28px;
+
+
+
+    }
 		}
 		.tv {
 
@@ -122,8 +148,8 @@
 		.litlimg {
 			position: absolute;
 			display: block;
-			top: 85px;
-			right: 35px;
+			top: 83px;
+			left: 183px;
 			// background: url("../img/shape128.png") 9px 7px no-repeat ;
 			// background-color: #FFF;
 			border-radius: 50%;
@@ -148,6 +174,14 @@
 			text-align: center;
 			margin-bottom: 16px;
 			margin-top: 21px;
+				 @include breakpoint(mobile){
+
+					margin-top: 16px;
+
+
+
+    }
+
 
 					}
 		p {
@@ -156,6 +190,14 @@
 			font-size: 14px;
 			font-weight: 300;
 			text-align: center;
+			 @include breakpoint(mobile){
+
+					padding-left: 50px;
+					padding-right: 50px;
+
+
+    }
+
 					}
 	}
 	.partner-person-tablet {
