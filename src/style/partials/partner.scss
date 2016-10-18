@@ -8,21 +8,31 @@
 
 
     }
+    @include breakpoint(tablet){
+
+          min-width: 768px  ;
+          width:  100%;
+
+
+
+
+    }
 }
 .partner-wrapper {
 
 	width: 940px;
 	margin: 0 auto;
-	margin-top: 100px;
-	margin-bottom: 105px;
+	margin-top: 70px;
+	margin-bottom: 100px;
 	 @include breakpoint(tablet){
 
 
-      	min-width: 768px;
-      	width: 100%;
-      	padding-left: 155px;
-      	padding-right: 100px;
+      	width: 768px;
+
+      	// padding-left: 155px;
+      	// padding-right: 100px;
       	margin-bottom: 100px;
+      	margin-top: 102px;
 
 
 
@@ -46,12 +56,18 @@
 		font-size: 22px;
 		font-weight: 700;
 		text-align: center;
-		margin-bottom: 40px;
+		margin-bottom: 35px;
 		@include breakpoint(mobile){
 
      			padding-left: 28px;
      			padding-right: 28px;
      			margin-bottom: 17px;
+
+
+    }
+    @include breakpoint(tablet){
+
+     			 margin-bottom: 34px;
 
 
     }
@@ -67,13 +83,15 @@
 		border-width: 2px;
 		border-color: #ff4e50;
 		background-color: #ffffff;
-		width: 198px;
+		width: 193px;
 		height: 40px;
 		border-radius: 30px;
 		padding: 14px 29px;
 		display: block;
 		margin: 0 auto;
 		text-decoration: none;
+		margin-top: 40px;
+
 		@include breakpoint(mobile){
 
      			width: 280px;
@@ -82,25 +100,48 @@
 
 
     }
+@include breakpoint(tablet){
 
+     			width: 190px;
+     			// margin-top: -35px;
+     			// letter-spacing: 0.6px;
+     			// padding-left: 5px;
+     			// text-align: center;
+
+
+    }
 	}
 
 
 		}
-	.partner-person {
-		float: left;
-		width: 218px;
-		margin-right: 15px;
-		 @include breakpoint(tablet){
+		.partner-person-wrapper {
+			 @include breakpoint(tablet){
 
 
-      	width: 194px;
-      	margin-right: 53px;
-      	margin-bottom: 59px;
+      padding-left: 150px;
+      padding-right: 100px;
+      margin: 0 auto;
 
 
 
     }
+		}
+	.partner-person {
+		float: left;
+		width: 235px;
+		// margin-right: 20px;
+		 @include breakpoint(tablet){
+
+
+      	width: 220px;
+      	margin-right: 35px;
+      	// margin-right: 53px;
+      	margin-bottom: 55px;
+
+
+
+    }
+
     @include breakpoint(mobile){
 
 
@@ -113,6 +154,7 @@
 
 
 		 img {
+
 			display: block;
 			margin:0 auto;
 			border-radius: 50%;
@@ -120,9 +162,18 @@
 		figure {
 			position: relative;
 			margin-bottom: 36px;
+			display: block;
+			 margin: 0 auto;
 			 @include breakpoint(mobile){
 
 					margin-bottom: 28px;
+
+
+
+    }
+     @include breakpoint(tablet){
+
+					margin-bottom: 0;
 
 
 
@@ -148,8 +199,8 @@
 		.litlimg {
 			position: absolute;
 			display: block;
-			top: 83px;
-			left: 183px;
+			top: 85px;
+			left: 138px;
 			// background: url("../img/shape128.png") 9px 7px no-repeat ;
 			// background-color: #FFF;
 			border-radius: 50%;
@@ -161,6 +212,15 @@
 			height: 42px;
 
 			z-index: 100;
+			 @include breakpoint(tablet){
+
+
+     		left: 132px;
+     		top: 85px;
+
+
+
+    }
 
 		}
 
@@ -181,6 +241,14 @@
 
 
     }
+     @include breakpoint(tablet){
+
+					margin-top: 18px;
+					margin-bottom: 15px;
+
+
+
+    }
 
 
 					}
@@ -190,6 +258,8 @@
 			font-size: 14px;
 			font-weight: 300;
 			text-align: center;
+			padding-left: 15px;
+			padding-right: 15px;
 			 @include breakpoint(mobile){
 
 					padding-left: 50px;
@@ -197,7 +267,14 @@
 
 
     }
+@include breakpoint(tablet){
 
+					letter-spacing: 0.3px;
+					line-height: 1.2;
+
+
+
+    }
 					}
 	}
 	.partner-person-tablet {
@@ -212,7 +289,26 @@
 	.partner-person:last-child {
 		margin-right: 0;
 	}
+.partner-person :nth-child(5){
+	@include breakpoint(tablet){
 
+
+       margin-bottom: 10px;
+
+
+
+    }
+}
+.partner-person :nth-child(4){
+	@include breakpoint(tablet){
+
+
+       margin-bottom: 10px;
+
+
+
+    }
+}
 
 
 }

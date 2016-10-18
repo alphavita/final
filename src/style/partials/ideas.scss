@@ -5,7 +5,8 @@
   margin: 0 auto;
    @include breakpoint(tablet){
       min-width: 788px;
-        width: 100%;
+       width:  100%;
+
 
 
     }
@@ -24,7 +25,7 @@
     font-size: 22px;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
      @include breakpoint(mobile){
 
          // letter-spacing: -0.25px;
@@ -37,11 +38,14 @@
 
   max-width:980px;
   margin:0 auto;
-  margin-bottom: 99px;
+  margin-bottom: 79px;
   @include breakpoint(tablet){
-      min-width: 788px;
-        width: 100%;
+      width: 788px;
+
         padding-left: 10px;
+         margin:0 auto;
+        margin-bottom: 72px;
+
 
     }
      @include breakpoint(mobile){
@@ -162,12 +166,14 @@ text-align: center;
 }
 .search-form {
 
-   width: 422px;
-    margin: 40px auto 70px;
+   width: 412px;
+    margin: 40px auto 60px;
+    margin-bottom: 100px;
     @include breakpoint(tablet){
 
 
         margin-bottom: 100px;
+        margin-top: 0px;
 
     }
      @include breakpoint(mobile){
@@ -185,6 +191,17 @@ text-align: center;
 
             line-height: 1.2;
             margin-bottom: 10px;
+            letter-spacing: 2.0px;
+
+
+
+        }
+         @include breakpoint(tablet){
+
+
+            letter-spacing: 0.6px;
+            margin-bottom: 35px;
+            letter-spacing: -0.5px;
 
 
 
@@ -225,7 +242,7 @@ text-align: center;
     font-weight: 300;
     text-align: left;
     padding: 14px 16px;
-    margin-right: 10px;
+    margin-right: 6px;
      @include breakpoint(mobile){
 
               width: 280px;
@@ -233,6 +250,14 @@ text-align: center;
               display: block;
               margin-bottom: 10px;
               padding-left: 13px;
+
+
+
+
+        }
+     @include breakpoint(tablet){
+margin-right: 5px;
+width: 238px;
 
 
 

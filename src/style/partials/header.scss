@@ -4,9 +4,10 @@
 
 .header-wrapper {
 	  @include breakpoint(tablet){
+		 min-width: 320px	;
+     			width:  100%;
+     			height: 702px;
 
-        padding-left: 50px;
-        padding-right: 50px;
 
     }
 @include breakpoint(mobile){
@@ -25,12 +26,11 @@
 	background-size: cover;
 	background-position: top center;
 	height: 700px;
+
 	header {
-
-
-
+		width:940px;
     		margin: 0 auto;
-		padding-top: 30px;
+		padding-top: 37px;
 		@include breakpoint(mobile){
 
      			padding-top: 22px;
@@ -39,6 +39,14 @@
      			background-size: cover;
 
 
+
+    }
+     @include breakpoint(tablet){
+			width: 768px	;
+
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 40px;
 
     }
 
@@ -52,6 +60,8 @@
 			text-align: left;
 			display: inline-block;
 			text-decoration: none;
+			padding-top: 10px;
+			letter-spacing: 1.2px;
 			@include breakpoint(mobile){
 
 
@@ -67,6 +77,12 @@
 
 
     }
+     @include breakpoint(tablet){
+
+        padding-top: 10px;
+		letter-spacing: 1.1px;
+    }
+
 
 		}
 		h1 {
@@ -77,9 +93,10 @@
 			text-align: center;
 			width: 500px;
 			margin: 0 auto;
-			margin-top: 152px;
+			margin-top: 148px;
+			line-height: 1.1;
 			text-transform: uppercase;
-			margin-bottom: 45px;
+			margin-bottom: 30px;
 			@include breakpoint(mobile){
 
 
@@ -102,6 +119,14 @@
 
 
     }
+     @include breakpoint(tablet){
+			letter-spacing: 0.10px;
+			margin-top: 145px;
+			line-height: 1.2;
+			margin-bottom: 24px;
+
+    }
+
 
 
 
@@ -112,7 +137,7 @@
 				font-size: 24px;
 				font-weight: 300;
 				text-align: center;
-				margin-bottom: 40px;
+				margin-bottom: 38px;
 				@include breakpoint(mobile){
 
 
@@ -128,12 +153,13 @@
 			// word-spacing: 1.2px;
 			margin-bottom: 20px;
 
+    }
+     @include breakpoint(tablet){
 
-
-
-
+     		margin-bottom: 36px;
 
     }
+
 
 			}
 			button {
@@ -158,9 +184,10 @@
      			margin-left: auto;
      			margin-right: auto;
 
+    }
+    @include breakpoint(tablet){
 
-
-
+			padding-left: 14px;
 
     }
 			}

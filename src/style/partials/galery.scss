@@ -9,26 +9,26 @@
 
 
     }
+    @include breakpoint(tablet){
+
+
+        min-width: 768px;
+        width: 100%;
+
+    }
 }
 .galery-wrapper {
 	width: 940px;
 	margin: 0 auto;
-	padding-top: 100px;
+	padding-top: 95px;
 	position: relative;
         height: 100%;
 
 
-         @include breakpoint(tablet){
 
-      	margin-left: 10px;
-      	margin-right: 10px;
-      	min-width: 768px;
-      	width: 100%;
-
-    }
     @include breakpoint(mobile){
 
-          min-width: 320px  ;
+     width: 320px  ;
           width:  100%;
           padding-left: 10px;
           padding-right: 10px;
@@ -40,6 +40,20 @@
 
 
     }
+     @include breakpoint(tablet){
+
+
+        padding-right:  0px;
+        display: block;
+        width: 768px;
+
+        padding-top: 95px;
+        display: block;
+        margin: 0 auto;
+        padding-left: 10px;
+
+
+    }
 
 	h2 {
 		font-family: Montserrat-Bold;
@@ -47,10 +61,10 @@
 		font-size: 22px;
 		font-weight: 700;
 		text-align: center;
-		margin-bottom: 40px;
+		margin-bottom: 10px;
 		 @include breakpoint(tablet){
 
-      	margin-bottom: 37px;
+      	margin-bottom: 35px;
 
 
     }
@@ -61,25 +75,40 @@
 
 
     }
+     @include breakpoint(tablet){
+
+         letter-spacing: 0.5px;
+
+
+
+    }
 
 
 	}
 	.swiper-container {
         width: 300px;
-        height: 450px;
+        height: 453px;
         float: left;
         margin-right: 20px;
          @include breakpoint(tablet){
-
-      	width: 236px;
+        margin-right: 20px;
+      	width: 237px;
       	height: 398px;
       	position: relative;
       	.swiper-button-next,
+
       	.swiper-button-prev {
       		position: absolute;
-      		top: 100px;
+      		top: 66px;
+          display: block;
+          float: none
       	}
-
+        .swiper-button-next {
+          right: 20px;
+        }
+        .swiper-button-prev {
+          left: 20px;
+        }
     }
     @include breakpoint(mobile){
 
@@ -108,8 +137,14 @@
     }
 
     }
-    .swiper-container:last-child {
+    .swiper-container:nth-child(4) {
     	margin-right: 0;
+       @include breakpoint(tablet){
+          margin-right: 20px;
+          padding-right: 0;
+
+
+    }
        @include breakpoint(mobile){
 
           min-width: 300px  ;
@@ -129,6 +164,12 @@
 
 
           }
+          @include breakpoint(tablet){
+          margin-right: 0;
+          padding-right: 0;
+
+
+    }
     }
     .swiper-slide {
     	position: relative;
@@ -155,9 +196,13 @@
 
 
           }
+          @include breakpoint(tablet){
+
+         margin-right: 0;
+        }
         .step {
         	position: absolute;
-        	top: 270px;
+        	top: 255px;
         	left:20px;
         	z-index: 10;
         	font-family: Montserrat-Regular;
@@ -179,6 +224,12 @@
          padding-right: 11px;
 
           }
+           @include breakpoint(tablet){
+
+        position: absolute;
+        top: 212px;
+        left: 20px;
+        }
 			        }
 			h2 {
 				font-family: Montserrat-Bold;
@@ -187,12 +238,20 @@
 				font-weight: 700;
 				text-align: left;
 				position: absolute;
-				top:310px;
+				top:292px;
 				left: 20px;
+        line-height: 1.15;
          @include breakpoint(mobile){
 
          top: 105px;
          left: 12px;
+         line-height: 1.2;
+
+          }
+           @include breakpoint(tablet){
+
+         top: 250px;
+         left: 17px;
          line-height: 1.2;
 
           }
@@ -207,9 +266,13 @@
 				top: 360px;
 				left: 20px;
 				width: 260px;
+        line-height: 1.2;
 				  @include breakpoint(tablet){
 
       			width: 197px;
+            top: 318px;
+            line-height: 1.2;
+            letter-spacing: -0.2px;
 
 
       	}
